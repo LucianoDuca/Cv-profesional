@@ -1,74 +1,64 @@
-%PDF-1.4
-%���� ReportLab Generated PDF document (opensource)
-1 0 obj
-<<
-/F1 2 0 R /F2 3 0 R
->>
-endobj
-2 0 obj
-<<
-/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
->>
-endobj
-3 0 obj
-<<
-/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
->>
-endobj
-4 0 obj
-<<
-/Contents 8 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 7 0 R /Resources <<
-/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
->> /Rotate 0 /Trans <<
+// ─── CURSOR ───────────────────────────────
+const dot  = document.querySelector('.cursor-dot');
+const ring = document.querySelector('.cursor-ring');
 
->> 
-  /Type /Page
->>
-endobj
-5 0 obj
-<<
-/PageMode /UseNone /Pages 7 0 R /Type /Catalog
->>
-endobj
-6 0 obj
-<<
-/Author (\(anonymous\)) /CreationDate (D:20260518213222+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260518213222+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
->>
-endobj
-7 0 obj
-<<
-/Count 1 /Kids [ 4 0 R ] /Type /Pages
->>
-endobj
-8 0 obj
-<<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 1786
->>
-stream
-Gatm<9lo&I&A@sBm&B#W(e,bs9(JtWN\aG!7S;B=B15-B>`b%5;Q2JNnU1BdMUkl>A';/0M?'o>[h$)h(!lra_#7%aU).lsp*QFTV"p1*Tg,@K"hgM">b;/Dbi-J^"k.]gj*9PoU?N68@Fu[?p_hQ[]31\4c(Hp-d6*&<OMZi3&I$b$ks^k.c8E;8')n0Y=#>D9Xo<n'?'^8pY2tc1hZKb0h2Il'QXAuQZ(Pb%8Xjb"Q.3=8M^6nHY9_RqqBX9_.OoF6-CVFoFXg<bb!)t^@t1e*/TO(_s1[r9BQ:2'SbN\]+M``5]<=#VlAS[O:^VT%0`#Wtn+qmdkWaADbBMLrN)m6sX;:NlZeMf@k<(Ci?5_&688^*TAg[G"O6m,"G'g\FK^FFaGQ3FiOh9dG_8$SV32EGQ)*uFn-Nghe%?QM(^qgU@4RBj!e&[-l3.1*u^=2=k)YWdeG"f>4h4=cdNeSKgUR.^:3bS+qd,K<.%sR`"L'r@sqt>ZpO11pP2Pc-I;LB#]@k!?bQio&4<#AO".,3*NjNbjs\("-u-l#2)4LO6<'Qc_%hmG.9jBt5=hf'np):Y<G(8]*^nF5,,hq3bP(/Jk)c#k=@VQ:3XX6&]s9+=del:--FU)CVl0YqN,k;4K.!b8e^&:P/6OF&<=NEPIq\f7u:R^*E><PbPj=.p?jkMU-Q0jLuGg8?RQ(ifERfPV>K9e6N3b)dd411?s1CXLj%_=iGMKL1W881Cg[*LR8mcGXIo6%2iubmc?$b/0DqABkt$<#-Y_Y1Cc!QF>2W3X@/RUQs97B%&*)e"i"Y1q+^"8n83.#efm7f(7<f_pW'I\OT=_PFcF!a#SI:0D0H6%NF4NPS)2,hh5aH9`<@%#p\qFcFCdiIbqVJSH)58RZ&T*jZ;M`QSq1$`?4>f3,S$3g#nK(\#V[L't.ta4.adY`lNFRGXV'mYIEiBoWkha#t931SoFMe]X,7^d<kdsSbSD'RsXUrha02ZkaSV>_]`U'6A/-lAo8_"]*%h=#7ae&iH0%GdkN@5q<*d**&9Yer:m1RA[E*kqml:Rr544Y05!)%hXcJ7M37,PUX,Z:,IbaRTNA(@X5!gH(B)!1qK,YBC>AT_;rM)WGgs%;UKOuo;CdDj?\M()lB,b7_bkVBO"8jPhk46=U5.DUIYc[GR*P2o+`cX;>L=`i*&<t&:1%RAb=`@)T`'=G0&.+7.sGRlM^qj9eYWeOXT^_'`/<q!lAJ4""f_\QS;I_D#Jh*FBdGCD_T+,3>A%\&+Gtge03"S'*^PksNsPBZcFEMT8hO[-HT3]#j%pg0@^)r`V-Kd%$eI'H_JCKJ,b3rD$:Y_C=pq-1%6,LFN!(dldZbIsO-ZfWEmHe'_7.B$VEp1i>!\_tSSK1.4t)I=h+^'OAQpcB0'.:p#ZA8\HCV&bS3B3_h5>d9>8cM?RDjEGSZoq5B4)-R,rSeW(01a.;Io)sA9eFa"<!G+6,11%\W=UbU(i1eaQe1bgrcYaG5FNH4K'#8K\j/;::W[_EH/P9W-ga9&#Z2_eqN^$qqqan637-'/9)WF%!&PPK`XVWP(;9?A<goLTN9l$5k?ID-FI\YNt'(WUD8MBn>j"T.f;J0%\nfTNr,dQb&q<aUg3'A]5:H3>U2)V[lZXCSgQF!\0f/s^GB"h3$<>3Fb6boU`3aS$p(#1Tr58u5HR-*WJT(W3RYYkck7HXSpg*\D:Q@qa*;K&[Q3Of')PDBO[=XXd\b2/MC44lbeCCggu@(>r,B#lpcXOVal2s2Y?Q0K+7uZCSbs#F&.KQ~>endstream
-endobj
-xref
-0 9
-0000000000 65535 f 
-0000000061 00000 n 
-0000000102 00000 n 
-0000000209 00000 n 
-0000000321 00000 n 
-0000000524 00000 n 
-0000000592 00000 n 
-0000000872 00000 n 
-0000000931 00000 n 
-trailer
-<<
-/ID 
-[<822eafc67001ad54b45aec470b3b54ad><822eafc67001ad54b45aec470b3b54ad>]
-% ReportLab generated PDF document -- digest (opensource)
+if (dot && ring) {
+  let rx = 0, ry = 0, tx = 0, ty = 0;
 
-/Info 6 0 R
-/Root 5 0 R
-/Size 9
->>
-startxref
-2808
-%%EOF
+  window.addEventListener('mousemove', e => {
+    tx = e.clientX; ty = e.clientY;
+    dot.style.left = tx + 'px';
+    dot.style.top  = ty + 'px';
+  });
+
+  (function loop() {
+    rx += (tx - rx) * 0.1;
+    ry += (ty - ry) * 0.1;
+    ring.style.left = rx + 'px';
+    ring.style.top  = ry + 'px';
+    requestAnimationFrame(loop);
+  })();
+
+  document.querySelectorAll('a, button, .proj-row, .stack-col li').forEach(el => {
+    el.addEventListener('mouseenter', () => ring.classList.add('on'));
+    el.addEventListener('mouseleave', () => ring.classList.remove('on'));
+  });
+}
+
+// ─── NAV + SCROLL PROGRESS ───────────────
+const nav = document.getElementById('nav');
+const bar = document.getElementById('progressBar');
+
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('stuck', window.scrollY > 20);
+  if (bar) {
+    const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+    bar.style.width = (pct * 100) + '%';
+  }
+});
+
+// ─── FADE REVEAL ─────────────────────────
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+  });
+}, { threshold: 0.08 });
+
+document.querySelectorAll('.fade').forEach(el => obs.observe(el));
+
+// ─── MOBILE MENU ─────────────────────────
+const menuBtn = document.getElementById('menuBtn');
+const navMenu = document.getElementById('navMenu');
+
+if (menuBtn && navMenu) {
+  menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('open');
+    navMenu.classList.toggle('open');
+  });
+  navMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      menuBtn.classList.remove('open');
+      navMenu.classList.remove('open');
+    });
+  });
+}

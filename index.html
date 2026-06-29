@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luciano Duca — CV</title>
+  <meta name="description" content="Currículum vitae de Luciano Duca — Desarrollo web, sistemas y UI/UX. Mendoza, Argentina." />
+  <meta property="og:title" content="Luciano Duca — CV" />
+  <meta property="og:description" content="Desarrollo web, sistemas y automatizaciones. Mendoza, Argentina." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav-left">
+      <a href="#inicio" class="nav-brand">LD</a>
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn" id="langBtn" aria-label="Cambiar idioma">
+          <span id="langFlag">🇦🇷</span>
+          <span id="langCode">ES</span>
+          <span class="lang-arrow">▾</span>
+        </button>
+        <div class="lang-dropdown" id="langDropdown" hidden>
+          <button class="lang-option active" data-lang="es">🇦🇷 Español</button>
+          <button class="lang-option" data-lang="en">🇺🇸 English</button>
+          <button class="lang-option" data-lang="pt">🇧🇷 Português</button>
+          <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
+          <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
+        </div>
+      </div>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+      <span></span><span></span>
+    </button>
+    <nav id="navMenu">
+      <a href="#perfil" data-i18n="nav-perfil">Perfil</a>
+      <a href="#proyectos" data-i18n="nav-proyectos">Proyectos</a>
+      <a href="#stack">Stack</a>
+      <a href="#contacto" data-i18n="nav-contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ─── HERO ──────────────────────────── -->
+    <section class="hero" id="inicio">
+
+      <div class="hero-left">
+        <p class="hero-label fade" data-i18n="hero-label">Disponible · Mendoza, Argentina · 2026</p>
+
+        <div class="hero-name">
+          <h1>
+            <span class="fade">Luciano</span>
+            <span class="fade d1 accent">Duca</span>
+          </h1>
+        </div>
+
+        <div class="hero-actions fade d2">
+          <a href="#proyectos" class="hero-cta" data-i18n="hero-cta-1">Ver proyectos</a>
+          <a href="#contacto" class="hero-cta hero-cta--ghost" data-i18n="hero-cta-2">Contactame</a>
+        </div>
+
+        <div class="hero-foot">
+          <p class="hero-sub fade d2" data-i18n="hero-sub">Este es mi portafolio web, donde presento mis habilidades y cómo las he aplicado en proyectos desarrollados de forma autodidacta.</p>
+          <div class="scroll-hint fade d2">
+            <div class="scroll-line"></div>
+            <span>scroll</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right fade d1">
+        <img src="assets/img/DSC02893.png" alt="Luciano Duca" loading="lazy" />
+      </div>
+
+    </section>
+
+    <!-- ─── MARQUEE ───────────────────────── -->
+    <div class="marquee-wrap">
+      <div class="marquee-inner">
+        <div class="marquee-track">
+          <span>HTML</span><b>·</b>
+          <span>CSS</span><b>·</b>
+          <span>JavaScript</span><b>·</b>
+          <span>Responsive</span><b>·</b>
+          <span>UI / UX</span><b>·</b>
+          <span>Python</span><b>·</b>
+          <span>NumPy</span><b>·</b>
+          <span>Tkinter</span><b>·</b>
+          <span>Node.js</span><b>·</b>
+          <span>SQL</span><b>·</b>
+          <span>C++</span><b>·</b>
+          <span>GitHub</span><b>·</b>
+          <span>Supabase</span><b>·</b>
+          <span>Render</span><b>·</b>
+          <span>Hostinger</span><b>·</b>
+        </div>
+        <div class="marquee-track" aria-hidden="true">
+          <span>HTML</span><b>·</b>
+          <span>CSS</span><b>·</b>
+          <span>JavaScript</span><b>·</b>
+          <span>Responsive</span><b>·</b>
+          <span>UI / UX</span><b>·</b>
+          <span>Python</span><b>·</b>
+          <span>NumPy</span><b>·</b>
+          <span>Tkinter</span><b>·</b>
+          <span>Node.js</span><b>·</b>
+          <span>SQL</span><b>·</b>
+          <span>C++</span><b>·</b>
+          <span>GitHub</span><b>·</b>
+          <span>Supabase</span><b>·</b>
+          <span>Vercel</span><b>·</b>
+          <span>Hostinger</span><b>·</b>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── PERFIL ────────────────────────── -->
+    <section class="s-perfil" id="perfil">
+      <div class="sec-label fade">
+        <span>01</span><span data-i18n="sec-perfil">Perfil profesional</span>
+      </div>
+      <div class="perfil-grid">
+        <div class="fade">
+          <h2 data-i18n="tray-h2">Mi trayectoria laboral:</h2>
+          <div class="tray-list">
+            <div class="tray-item">
+              <span class="tray-num">01</span>
+              <div>
+                <strong data-i18n="tray-01-strong">Vendedor Comercial – Entre Dos (Sucursal Hotel Sheraton, Mendoza)</strong>
+                <p data-i18n="tray-01-p">2025 – Principios de 2026. Me desempeñé como vendedor comercial, brindando atención personalizada a clientes nacionales e internacionales. Utilicé mis conocimientos de idiomas para mejorar la comunicación con turistas extranjeros e implementé estrategias comerciales tanto en el punto de venta como en canales digitales, contribuyendo al incremento de las ventas y a una mejor experiencia del cliente.</p>
+              </div>
+            </div>
+            <div class="tray-item">
+              <span class="tray-num">02</span>
+              <div>
+                <strong data-i18n="tray-02-strong">Instituto San Vicente — Plataforma web institucional</strong>
+                <p data-i18n="tray-02-p">Desarrollo completo de una plataforma web institucional multipage para un colegio privado argentino.</p>
+              </div>
+            </div>
+            <div class="tray-item">
+              <span class="tray-num">03</span>
+              <div>
+                <strong data-i18n="tray-03-strong">GoRugby</strong>
+                <p data-i18n="tray-03-p">Plataforma comunitaria full-stack para fanáticos del rugby con partidos en vivo, predicciones, rankings y gestión de clubes.</p>
+              </div>
+            </div>
+            <div class="tray-item">
+              <span class="tray-num">04</span>
+              <div>
+                <strong data-i18n="tray-04-strong">POS - Fiambrería Duca — App de escritorio para consulta de precios</strong>
+                <p data-i18n="tray-04-p">Aplicación de escritorio desarrollada para una fiambrería local, que permite consultar precios en tiempo real mediante escaneo de código de barras. El negocio puede gestionar su catálogo completo de productos desde la misma herramienta, con sincronización automática a la nube.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="fade d1" data-i18n="bio">
+            Mi visión a futuro se ve ligada al cambio mental y la tecnología como herramienta revolucionaria.
+            Me formé de manera autodidacta a través de cursos de desarrollo, creciendo al lanzarme al ámbito laboral
+            con responsabilidad y cumplimiento de normas.
+            Actualmente me encuentro en busca de una oportunidad laboral que me permita seguir creciendo como programador, afrontar nuevos desafíos y continuar desarrollando mis habilidades técnicas.
+          </p>
+          <div class="meta-rows fade d2">
+            <div class="meta-row">
+              <span data-i18n="meta-enfoque">Enfoque</span><strong data-i18n="meta-enfoque-val">Tecnología & sistemas</strong>
+            </div>
+            <div class="meta-row">
+              <span data-i18n="meta-perfil">Perfil</span><strong data-i18n="meta-perfil-val">Autodidacta — cursos propios</strong>
+            </div>
+            <div class="meta-row">
+              <span data-i18n="meta-formacion">Formación</span><strong>Youtube, COURSERA, Udemy, Google Developers</strong>
+            </div>
+            <div class="meta-row meta-row--tall">
+              <span data-i18n="meta-idiomas">Idiomas</span>
+              <div>
+                <strong>
+                  <svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 14">
+                    <rect width="21" height="14" fill="#74ACDF"/>
+                    <rect y="4.67" width="21" height="4.67" fill="#fff"/>
+                  </svg><span data-i18n="lang-es">Español nativo</span>
+                </strong>
+                <strong>
+                  <svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 14">
+                    <rect width="21" height="14" fill="#B22234"/>
+                    <rect y="2.15" width="21" height="1.08" fill="#fff"/>
+                    <rect y="4.31" width="21" height="1.08" fill="#fff"/>
+                    <rect y="6.46" width="21" height="1.08" fill="#fff"/>
+                    <rect y="8.62" width="21" height="1.08" fill="#fff"/>
+                    <rect y="10.77" width="21" height="1.08" fill="#fff"/>
+                    <rect y="12.92" width="21" height="1.08" fill="#fff"/>
+                    <rect width="8.4" height="7.54" fill="#3C3B6E"/>
+                  </svg><span data-i18n="lang-en">Inglés avanzado</span>
+                </strong>
+                <small class="lang-sub" data-i18n="lang-sub-1">Conversacional · lenguaje negociador</small>
+                <small class="lang-sub" data-i18n="lang-sub-2">Modalidad presencial en instituciones como Amicana Mendoza y Camden Town San Luis.</small>
+                <small class="meta-note" data-i18n="lang-note">Entusiasmo por el lenguaje que empezó desde temprana edad.</small>
+                <strong>
+                  <svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 14">
+                    <rect width="21" height="14" fill="#009C3B"/>
+                    <polygon points="10.5,1.5 19.5,7 10.5,12.5 1.5,7" fill="#FFDF00"/>
+                    <circle cx="10.5" cy="7" r="3" fill="#002776"/>
+                  </svg><span data-i18n="lang-pt">Portugués</span>
+                </strong>
+                <small class="lang-sub" data-i18n="lang-sub-pt">Recientemente conocedor y practicante por necesidad laboral.</small>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROYECTOS ─────────────────────── -->
+    <section class="s-proyectos" id="proyectos">
+      <div class="sec-label fade">
+        <span>02</span><span data-i18n="sec-proyectos">Proyectos</span>
+      </div>
+      <div class="proj-list">
+
+        <a href="#" class="proj-row fade" target="_blank" rel="noopener noreferrer">
+          <div class="proj-num">01</div>
+          <div class="proj-info">
+            <h3>Instituto San Vicente</h3>
+            <p data-i18n="proj-1-p">Desarrollo completo de una plataforma web institucional multipage para un colegio privado argentino, que incluye landing page, secciones académicas por nivel (Inicial, Primaria y Secundaria), área de inglés, galería de fotos, formulario de contacto y un portal deportivo (Club Sanvi) con múltiples disciplinas. El proyecto integra autenticación de usuarios, paneles de gestión diferenciados por rol (administradores, directivos y docentes), soporte multilenguaje (español/inglés) y optimización de assets para producción. Desplegado en Netlify con servidor propio en Node.js para endpoints sensibles.</p>
+            <div class="proj-tags">
+              <span>HTML5 — estructura semántica y accesibilidad (ARIA)</span><span>CSS3 — diseño responsive mobile-first, animaciones con scroll, variables CSS y media queries</span><span>JavaScript (ES6+) — lógica del cliente, Intersection Observer API, galería lightbox con navegación por teclado</span><span>Node.js + Express.js — servidor backend para manejo de rutas y endpoints de correo</span><span>Supabase — base de datos PostgreSQL, autenticación y almacenamiento en la nube</span><span>Resend API — envío transaccional de emails</span><span>i18n personalizado — sistema de internacionalización bilingüe sin librerías externas</span><span>SEO on-page — metatags, Open Graph y optimización de crawlability</span><span>Sharp — procesamiento y conversión de imágenes a formato WebP para rendimiento</span><span>Netlify — CI/CD, cabeceras HTTP personalizadas y despliegue continuo</span><span>Git — control de versiones y gestión del flujo de trabajo</span>
+            </div>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </a>
+
+        <a href="#" class="proj-row fade d1" target="_blank" rel="noopener noreferrer">
+          <div class="proj-num">02</div>
+          <div class="proj-info">
+            <h3>GoRugby</h3>
+            <p data-i18n="proj-2-p">Aplicación web full-stack orientada a la comunidad rugbística, con seguimiento de partidos en vivo, predicciones, rankings de torneos globales y gestión de clubes. Integra múltiples APIs deportivas externas con un proxy seguro del lado del servidor para proteger credenciales. Soporta temas claro/oscuro, diseño responsive y sistema de roles (usuario/admin).</p>
+            <div class="proj-tags">
+              <span>React 18 + TypeScript — SPA con tipado estricto, componentización modular y Context API para manejo de estado global (autenticación, tema, datos en vivo)</span><span>Vite — Build tool con hot reload, configuración de proxies de desarrollo y optimización de bundles para producción</span><span>CSS personalizado (Design System) — Sistema de diseño propio con variables CSS, soporte de temas dinámicos (claro/oscuro/sistema), 6 paletas de acento y tamaños de fuente configurables sin recarga de página</span><span>Node.js + Vercel Edge Functions — Funciones serverless en el edge para proxy de APIs externas, manejo de headers de autenticación y caching HTTP (stale-while-revalidate)</span><span>Integración de APIs REST — Consumo de 4 APIs deportivas simultáneas (api-sports.io, ESPN, Highlightly, TheSportsDB) con normalización de datos, deduplicación y mapeo de IDs entre fuentes</span><span>LocalStorage &amp; gestión de sesión — Persistencia de preferencias, historial de predicciones, sesión de usuario y estado de la app sin base de datos</span><span>Git &amp; GitHub — Control de versiones, gestión de ramas y variables de entorno separadas por entorno (.env.local / Vercel env vars)</span><span>Vercel — Deploy continuo con configuración de SPA routing, assets estáticos y funciones edge en producción</span><span>Diseño responsive — Navegación adaptativa (sidebar fijo en desktop, navbar inferior en mobile), layout fluido con CSS Grid y Flexbox</span>
+            </div>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </a>
+
+        <a href="#" class="proj-row fade d2" target="_blank" rel="noopener noreferrer">
+          <div class="proj-num">03</div>
+          <div class="proj-info">
+            <h3>Fiambrería Duca</h3>
+            <p data-i18n="proj-3-p">Aplicación de escritorio desarrollada para una fiambrería local, que permite consultar precios en tiempo real mediante escaneo de código de barras. El negocio puede gestionar su catálogo completo de productos desde la misma herramienta, con sincronización automática a la nube.</p>
+            <div class="proj-tags">
+              <span>React + TypeScript — Interfaz construida con componentes funcionales, hooks (useState, useEffect, useMemo, useRef) y tipado estático para reducir errores en tiempo de desarrollo</span><span>Electron — Empaqueta la app web como aplicación nativa de Windows, con instalador .exe generado automáticamente mediante electron-builder</span><span>Supabase (PostgreSQL) — Base de datos en la nube como backend principal; maneja el CRUD completo de productos con consultas paginadas y filtros por categoría, nombre y código de barras</span><span>Vite — Bundler moderno para compilación del frontend, con integración directa al proceso de Electron en modo desarrollo</span><span>Node.js — Runtime del proceso principal de Electron; gestiona la comunicación entre la ventana del navegador embebido y el sistema operativo</span><span>Web Audio API — Feedback sonoro nativo del navegador al escanear un producto (tono de éxito o error), sin dependencias externas de audio</span><span>CSS personalizado — Diseño responsivo con soporte de modo oscuro/claro, gestionado mediante clases condicionales en React</span>
+            </div>
+          </div>
+          <div class="proj-arrow">↗</div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ─── STACK ─────────────────────────── -->
+    <section class="s-stack" id="stack">
+      <div class="sec-label fade">
+        <span>03</span><span data-i18n="sec-stack">Stack técnico</span>
+      </div>
+      <div class="stack-grid fade d1">
+        <div class="stack-col">
+          <h4>Frontend</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responsive · UI/UX</li>
+            <li>Tkinter</li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <h4 data-i18n="stack-backend">Backend & Datos</h4>
+          <ul>
+            <li>Python</li>
+            <li>Django</li>
+            <li>Node.js</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+            <li>C++</li>
+          </ul>
+        </div>
+        <div class="stack-col">
+          <h4>Deploy & Tools</h4>
+          <ul>
+            <li>GitHub</li>
+            <li>Vercel</li>
+            <li>Render</li>
+            <li>Hostinger</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FRASE ─────────────────────────── -->
+    <section class="s-frase">
+      <blockquote class="fade" data-i18n="blockquote">
+Soy un desarrollador autodidacta, proactivo y apasionado por la tecnología. Disfruto aprender de forma constante, aportar nuevas ideas y enfrentar desafíos que me permitan crear soluciones eficientes y seguir creciendo profesionalmente. Actualmente resido en Mendoza, Argentina.      </blockquote>
+    </section>
+
+    <!-- ─── CONTACTO ──────────────────────── -->
+    <section class="s-contacto" id="contacto">
+      <div class="sec-label fade">
+        <span>04</span><span data-i18n="sec-contacto">Contacto</span>
+      </div>
+      <h2 class="fade" data-i18n="contact-title">Hablemos!!!</h2>
+      <div class="contact-list fade d1">
+        <a href="mailto:lucianoduca123@gmail.com" class="contact-row">
+          <span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email
+          </span>
+          <strong>lucianoduca123@gmail.com</strong>
+          <em>↗</em>
+        </a>
+        <a href="https://github.com/LucianoDuca" target="_blank" rel="noopener noreferrer" class="contact-row">
+          <span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+            GitHub
+          </span>
+          <strong>LucianoDuca</strong>
+          <em>↗</em>
+        </a>
+        <a href="https://www.instagram.com/lucianoducca_/" target="_blank" rel="noopener noreferrer" class="contact-row">
+          <span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            Instagram
+          </span>
+          <strong>lucianoducca_</strong>
+          <em>↗</em>
+        </a>
+        <a href="https://www.linkedin.com/in/luciano-benjamin-duca-torres-204962419/" target="_blank" rel="noopener noreferrer" class="contact-row">
+          <span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </span>
+          <strong>lucianoduca</strong>
+          <em>↗</em>
+        </a>
+        <a href="https://wa.me/5492615368176" target="_blank" rel="noopener noreferrer" class="contact-row">
+          <span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            WhatsApp
+          </span>
+          <strong>+54 261 536-8176</strong>
+          <em>↗</em>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
