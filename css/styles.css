@@ -710,8 +710,8 @@ a.proj-row { display:grid; }
 
 /* ─── STACK ICONS ────────────────────────────────── */
 .stack-icon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   object-fit: contain;
   vertical-align: middle;
   margin-right: 10px;
