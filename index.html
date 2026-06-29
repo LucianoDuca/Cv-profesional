@@ -12,7 +12,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>(function(){var t=localStorage.getItem('theme');if(t==='dark'||(!t&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.setAttribute('data-theme','dark');})();</script>
 </head>
 <body>
 
@@ -37,6 +38,7 @@
           <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
         </div>
       </div>
+      <button class="theme-toggle" id="themeBtn" aria-label="Cambiar tema claro/oscuro" role="switch"></button>
     </div>
     <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
       <span></span><span></span>
@@ -363,7 +365,8 @@ Soy un desarrollador autodidacta, proactivo y apasionado por la tecnología. Dis
 
   </main>
 
-  <script src="i18n.js"></script>
-  <script src="script.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/theme.js"></script>
 </body>
 </html>

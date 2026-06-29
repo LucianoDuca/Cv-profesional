@@ -707,3 +707,76 @@ a.proj-row { display:grid; }
   .contact-row        { grid-template-columns:1fr; gap:4px; }
   .contact-row span   { font-size:9px; }
 }
+
+/* ─── THEME TOGGLE (interruptor) ─────────────────── */
+.theme-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 40px;
+  height: 22px;
+  border-radius: 11px;
+  background: rgba(28,26,22,.12);
+  border: 1px solid var(--line);
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 0;
+  transition: background .3s, border-color .3s;
+}
+.theme-toggle::after {
+  content: '';
+  position: absolute;
+  top: 2px; left: 2px;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--muted);
+  box-shadow: 0 1px 4px rgba(0,0,0,.22);
+  transition: transform .3s cubic-bezier(.4,0,.2,1), background .3s, box-shadow .3s;
+}
+.theme-toggle.is-dark {
+  background: rgba(45,115,24,.2);
+  border-color: rgba(45,115,24,.4);
+}
+.theme-toggle.is-dark::after {
+  transform: translateX(18px);
+  background: var(--accent);
+  box-shadow: 0 1px 8px rgba(45,115,24,.45);
+}
+
+/* ─── DARK MODE ──────────────────────────────────── */
+[data-theme="dark"] {
+  --bg:    #131210;
+  --text:  #f0ece4;
+  --muted: #7a7570;
+  --line:  rgba(240,236,228,.09);
+}
+body { transition: background .35s ease, color .35s ease; }
+
+[data-theme="dark"] .nav.stuck {
+  background: rgba(19,18,16,.96);
+}
+[data-theme="dark"] .lang-dropdown {
+  background: rgba(22,20,18,.98);
+}
+[data-theme="dark"] .hero-right               { background: #2a2823; }
+[data-theme="dark"] .hero-right img           { filter: grayscale(1) contrast(1.04) brightness(.7); }
+[data-theme="dark"] .hero-right::after {
+  background: linear-gradient(to right, rgba(19,18,16,.65) 0%, transparent 45%);
+}
+/* La sección de contacto siempre debe ser oscura.
+   Se pinchan --bg/--text localmente para que los hijos que los usen
+   sigan renderizando correctamente (texto claro sobre fondo oscuro). */
+[data-theme="dark"] .s-contacto {
+  --bg:   #f0ece4;
+  --text: #0d0b09;
+  background: #0d0b09;
+  color: #f0ece4;
+}
+@media (max-width:680px) {
+  [data-theme="dark"] .nav nav { background: rgba(19,18,16,.98); }
+}
+@media (max-width:960px) {
+  [data-theme="dark"] .hero-right::after {
+    background: linear-gradient(to bottom, rgba(19,18,16,.55) 0%, transparent 35%);
+  }
+}
