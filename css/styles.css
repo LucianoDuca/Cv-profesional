@@ -489,18 +489,22 @@ a.proj-row { display:grid; }
 }
 .stack-col ul { list-style:none; }
 .stack-col li {
-  font-size:clamp(1.2rem,2vw,2rem);
-  font-weight:900; letter-spacing:-.04em;
-  text-transform:uppercase; line-height:1;
-  padding:14px 0;
+  font-size:0.875rem;
+  font-weight:500;
+  letter-spacing:0;
+  text-transform:none;
+  line-height:1;
+  padding:10px 0;
   border-bottom:1px solid var(--line);
   color:var(--text);
+  display:flex;
+  align-items:center;
   transition:color .2s, padding-left .2s;
 }
 .stack-col li:last-child { border-bottom:none; }
 .stack-col li:hover {
   color:var(--accent);
-  padding-left:10px;
+  padding-left:6px;
 }
 
 /* ─── FRASE ──────────────────────────────────────── */
@@ -680,7 +684,7 @@ a.proj-row { display:grid; }
   .proj-tags span { font-size:10px; padding:3px 8px; }
 
   /* Stack */
-  .stack-col li { font-size:clamp(1rem,5.5vw,1.6rem); padding:10px 0; }
+  .stack-col li { font-size:0.875rem; padding:9px 0; }
 
   /* Frase */
   .s-frase blockquote::before { font-size:clamp(2.5rem,14vw,5rem); }
