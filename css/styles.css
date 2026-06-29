@@ -708,6 +708,21 @@ a.proj-row { display:grid; }
   .contact-row span   { font-size:9px; }
 }
 
+/* ─── STACK ICONS ────────────────────────────────── */
+.stack-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 10px;
+  flex-shrink: 0;
+  display: inline-block;
+}
+/* Iconos monocromáticos (GitHub, Vercel) — se invierten en modo oscuro */
+[data-theme="dark"] .stack-icon--mono {
+  filter: invert(1) brightness(1.4);
+}
+
 /* ─── THEME TOGGLE (interruptor) ─────────────────── */
 .theme-toggle {
   position: relative;
