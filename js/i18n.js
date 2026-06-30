@@ -447,11 +447,11 @@ const translations = {
 };
 
 const langMeta = {
-  es: { flag: '🇦🇷', code: 'ES' },
-  en: { flag: '🇺🇸', code: 'EN' },
-  pt: { flag: '🇧🇷', code: 'PT' },
-  fr: { flag: '🇫🇷', code: 'FR' },
-  de: { flag: '🇩🇪', code: 'DE' },
+  es: { flag: '<svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 14"><rect width="21" height="14" fill="#74ACDF"/><rect y="4.67" width="21" height="4.67" fill="#fff"/></svg>', code: 'ES' },
+  en: { flag: '<svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 14"><rect width="21" height="14" fill="#B22234"/><rect y="1.08" width="21" height="1.08" fill="#fff"/><rect y="3.23" width="21" height="1.08" fill="#fff"/><rect y="5.38" width="21" height="1.08" fill="#fff"/><rect y="7.54" width="21" height="1.08" fill="#fff"/><rect y="9.69" width="21" height="1.08" fill="#fff"/><rect y="11.85" width="21" height="1.08" fill="#fff"/><rect width="8.4" height="7.54" fill="#3C3B6E"/></svg>', code: 'EN' },
+  pt: { flag: '<svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 14"><rect width="21" height="14" fill="#009C3B"/><polygon points="10.5,1.5 19.5,7 10.5,12.5 1.5,7" fill="#FFDF00"/><circle cx="10.5" cy="7" r="3" fill="#002776"/></svg>', code: 'PT' },
+  fr: { flag: '<svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 14"><rect width="21" height="14" fill="#EF4135"/><rect width="14" height="14" fill="#fff"/><rect width="7" height="14" fill="#002395"/></svg>', code: 'FR' },
+  de: { flag: '<svg class="flag-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 14"><rect width="21" height="14" fill="#FFCE00"/><rect width="21" height="9.33" fill="#DD0000"/><rect width="21" height="4.67" fill="#000"/></svg>', code: 'DE' },
 };
 
 // ─── APLICAR IDIOMA ──────────────────────────
@@ -475,7 +475,7 @@ function applyLanguage(lang) {
   const meta = langMeta[lang];
   const flagEl = document.getElementById('langFlag');
   const codeEl = document.getElementById('langCode');
-  if (flagEl) flagEl.textContent = meta.flag;
+  if (flagEl) flagEl.innerHTML = meta.flag;
   if (codeEl) codeEl.textContent = meta.code;
 
   document.querySelectorAll('.lang-option').forEach(opt => {
