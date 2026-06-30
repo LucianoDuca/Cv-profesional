@@ -51,7 +51,6 @@ const translations = {
     'contact-title': 'Hablemos',
     // ── Proyectos page ──
     'pp-sec-label': 'Proyectos',
-    'pp-hero-h1': 'Todos<br>mis <span class="accent">proyectos</span>',
     'pp-features-title': 'Funcionalidades',
     'pp-01-desc': 'Plataforma web institucional multipage para un colegio privado argentino. Cubre desde la presentación pública hasta la gestión interna diferenciada por rol, incluyendo un portal deportivo completo y soporte bilingüe.',
     'pp-01-f1': 'Autenticación con 3 niveles de rol — Administrador, Directivo y Docente',
@@ -81,7 +80,11 @@ const translations = {
     'pp-03-f6': 'Instalador .exe nativo para Windows generado con electron-builder',
     'pp-03-f7': 'Modo oscuro y claro con persistencia de preferencia del usuario',
     'pp-back-nav': 'Navegación',
-    'pp-back-link-text': 'Volver al<br>sitio web',
+    'pp-back-link-text-1': 'Volver al',
+    'pp-back-link-text-2': 'sitio web',
+    'pp-hero-h1-top': 'Todos',
+    'pp-hero-h1-mid': 'mis',
+    'pp-hero-h1-accent': 'proyectos',
   },
 
   en: {
@@ -135,7 +138,6 @@ const translations = {
     'contact-title': "Let's talk",
     // ── Proyectos page ──
     'pp-sec-label': 'Projects',
-    'pp-hero-h1': 'All<br>my <span class="accent">projects</span>',
     'pp-features-title': 'Features',
     'pp-01-desc': 'Multipage institutional web platform for a private Argentine school. Covers everything from public presentation to role-based internal management, including a complete sports portal and bilingual support.',
     'pp-01-f1': 'Authentication with 3 role levels — Administrator, Principal and Teacher',
@@ -165,7 +167,11 @@ const translations = {
     'pp-03-f6': 'Native Windows .exe installer generated with electron-builder',
     'pp-03-f7': 'Dark and light mode with user preference persistence',
     'pp-back-nav': 'Navigation',
-    'pp-back-link-text': 'Back to<br>website',
+    'pp-back-link-text-1': 'Back to',
+    'pp-back-link-text-2': 'website',
+    'pp-hero-h1-top': 'All',
+    'pp-hero-h1-mid': 'my',
+    'pp-hero-h1-accent': 'projects',
   },
 
   pt: {
@@ -219,7 +225,6 @@ const translations = {
     'contact-title': 'Vamos conversar',
     // ── Proyectos page ──
     'pp-sec-label': 'Projetos',
-    'pp-hero-h1': 'Todos<br>os meus <span class="accent">projetos</span>',
     'pp-features-title': 'Funcionalidades',
     'pp-01-desc': 'Plataforma web institucional multipage para um colégio privado argentino. Cobre desde a apresentação pública até a gestão interna diferenciada por papel, incluindo um portal esportivo completo e suporte bilíngue.',
     'pp-01-f1': 'Autenticação com 3 níveis de papel — Administrador, Diretor e Professor',
@@ -249,7 +254,11 @@ const translations = {
     'pp-03-f6': 'Instalador .exe nativo para Windows gerado com electron-builder',
     'pp-03-f7': 'Modo escuro e claro com persistência da preferência do usuário',
     'pp-back-nav': 'Navegação',
-    'pp-back-link-text': 'Voltar ao<br>site',
+    'pp-back-link-text-1': 'Voltar ao',
+    'pp-back-link-text-2': 'site',
+    'pp-hero-h1-top': 'Todos',
+    'pp-hero-h1-mid': 'os meus',
+    'pp-hero-h1-accent': 'projetos',
   },
 
   fr: {
@@ -303,7 +312,6 @@ const translations = {
     'contact-title': 'Parlons',
     // ── Proyectos page ──
     'pp-sec-label': 'Projets',
-    'pp-hero-h1': 'Tous<br>mes <span class="accent">projets</span>',
     'pp-features-title': 'Fonctionnalités',
     'pp-01-desc': "Plateforme web institutionnelle multipage pour un lycée privé argentin. Couvre la présentation publique jusqu'à la gestion interne différenciée par rôle, incluant un portail sportif complet et un support bilingue.",
     'pp-01-f1': "Authentification à 3 niveaux de rôle — Administrateur, Directeur et Enseignant",
@@ -333,7 +341,11 @@ const translations = {
     'pp-03-f6': 'Installateur .exe natif pour Windows généré avec electron-builder',
     'pp-03-f7': "Mode sombre et clair avec persistance des préférences de l'utilisateur",
     'pp-back-nav': 'Navigation',
-    'pp-back-link-text': 'Retour au<br>site web',
+    'pp-back-link-text-1': 'Retour au',
+    'pp-back-link-text-2': 'site web',
+    'pp-hero-h1-top': 'Tous',
+    'pp-hero-h1-mid': 'mes',
+    'pp-hero-h1-accent': 'projets',
   },
 
   de: {
@@ -387,7 +399,6 @@ const translations = {
     'contact-title': 'Sprechen wir',
     // ── Proyectos page ──
     'pp-sec-label': 'Projekte',
-    'pp-hero-h1': 'Alle<br>meine <span class="accent">Projekte</span>',
     'pp-features-title': 'Funktionen',
     'pp-01-desc': 'Mehrseitige institutionelle Webplattform für eine private argentinische Schule. Umfasst die öffentliche Darstellung bis hin zur rollenbasierten internen Verwaltung, einschließlich eines vollständigen Sportportals und zweisprachiger Unterstützung.',
     'pp-01-f1': 'Authentifizierung mit 3 Rollenebenen — Administrator, Direktor und Lehrer',
@@ -417,7 +428,11 @@ const translations = {
     'pp-03-f6': 'Nativer Windows-.exe-Installer generiert mit electron-builder',
     'pp-03-f7': 'Dunkel- und Hellmodus mit Persistenz der Nutzerpräferenz',
     'pp-back-nav': 'Navigation',
-    'pp-back-link-text': 'Zurück zur<br>Website',
+    'pp-back-link-text-1': 'Zurück zur',
+    'pp-back-link-text-2': 'Website',
+    'pp-hero-h1-top': 'Alle',
+    'pp-hero-h1-mid': 'meine',
+    'pp-hero-h1-accent': 'Projekte',
   },
 };
 
@@ -441,14 +456,6 @@ function applyLanguage(lang) {
     const key = el.dataset.i18n;
     if (translations[lang][key] !== undefined) {
       el.textContent = translations[lang][key];
-    }
-  });
-
-  // Reemplaza innerHTML para elementos con HTML interno (spans, br, etc.)
-  document.querySelectorAll('[data-i18n-html]').forEach(el => {
-    const key = el.dataset.i18nHtml;
-    if (translations[lang][key] !== undefined) {
-      el.innerHTML = translations[lang][key];
     }
   });
 
